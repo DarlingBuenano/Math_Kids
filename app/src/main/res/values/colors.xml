@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="cards">#ffffff</color>
+    <color name="botones">#eb9f4a</color>
+    <color name="fondo">#fbf5f2</color>
+    <color name="texto">#151515</color>
+    <color name="textoPrimario">#ffffff</color>
+    <color name="textoSecundario">#cecece</color>
+
+    <color name="blancoG1">#FFFFFF</color>
+    <color name="blancoG2">#CDFFFFFF</color>
+    <color name="transparente">#00FFFFFF</color>
 </resources>
