@@ -3,8 +3,8 @@
     <style name="TemaKids" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
         <item name="colorPrimary">@color/botones</item> <!--Color para los botones-->
-        <item name="colorPrimaryVariant">@color/textoPrimario</item> <!--Color para la fuente del boton primary-->
-        <item name="colorOnPrimary">@color/textoSecundario</item> <!--Color para la fuente cuando el primario esta seleccionado-->
+        <item name="colorPrimaryVariant">@color/textoSecundario</item> <!--Color para la fuente del boton primary-->
+        <item name="colorOnPrimary">@color/textoPrimario</item> <!--Color para la fuente cuando el primario esta seleccionado-->
 
         <item name="colorSurface">@color/texto</item> <!--Color para la fuente de una tarjeta-->
         <item name="colorOnSurface">@color/texto</item> <!--Color para la fuente-->
@@ -13,8 +13,8 @@
         <item name="android:colorForeground">@color/texto</item> <!--Color para el texto de os inputs-->
 
         <item name="colorSecondary">@color/botones</item> <!--Color para botones flotantes, check, radiobutton, etc-->
-        <item name="colorSecondaryVariant">@color/textoPrimario</item> <!--Color de letra para el Secundary-->
-        <item name="colorOnSecondary">@color/textoSecundario</item> <!--Color de letra cuando el Secundary esta seleccionado-->
+        <item name="colorSecondaryVariant">@color/textoSecundario</item> <!--Color de letra para el Secundary-->
+        <item name="colorOnSecondary">@color/textoPrimario</item> <!--Color de letra cuando el Secundary esta seleccionado-->
 
         <item name="android:textColor">@color/texto</item> <!--Color de letra para textos, etc-->
     </style>
