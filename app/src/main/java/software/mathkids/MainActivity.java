@@ -21,9 +21,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ontouchTocarPantalla(View view){
-        Toast.makeText(getApplicationContext(), "Tocaste la pantalla", Toast.LENGTH_SHORT).show();
-
-        //Aqui programar para ir a la siguiente pantalla
         Intent puente = new Intent(this.getApplicationContext(), OpcionesActivity.class);
         startActivity(puente);
     }

@@ -33,7 +33,9 @@
             android:background="@drawable/boton"
             android:text="TOCA LA PANTALLA"
             android:textAllCaps="false"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:onClick="ontouchTocarPantalla"/>
 
     </LinearLayout>
 

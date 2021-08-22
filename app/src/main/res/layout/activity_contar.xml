@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLFondoPantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_landscape_bosque"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".ContarActivity">
+
+    <TextView
+        android:id="@+id/txtPregunta_actC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blanco60"
+        android:padding="5dp"
+        android:text="¿Cuántos osos hay en el bosque?"
+        android:textAlignment="center"
+        android:textColor="@color/texto"
+        android:textSize="18sp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:columnCount="5"
+        app:rowCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginImg"
+            android:layout_marginRight="@dimen/marginImg"
+            android:layout_marginBottom="@dimen/marginImg"
+            app:cardBackgroundColor="@color/blanco60"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/imgOpcion1_actC"
+                android:layout_width="@dimen/sizeAltoImg"
+                android:layout_height="@dimen/sizeAltoImg"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_oso" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginImg"
+            android:layout_marginRight="@dimen/marginImg"
+            android:layout_marginBottom="@dimen/marginImg"
+            app:cardBackgroundColor="@color/blanco60"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/imgOpcion2_actC"
+                android:layout_width="@dimen/sizeAltoImg"
+                android:layout_height="@dimen/sizeAltoImg"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_oso" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginImg"
+            android:layout_marginRight="@dimen/marginImg"
+            android:layout_marginBottom="@dimen/marginImg"
+            app:cardBackgroundColor="@color/blanco60"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/imgOpcion3_actC"
+                android:layout_width="@dimen/sizeAltoImg"
+                android:layout_height="@dimen/sizeAltoImg"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pelota" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginImg"
+            android:layout_marginRight="@dimen/marginImg"
+            android:layout_marginBottom="@dimen/marginImg"
+            app:cardBackgroundColor="@color/blanco60"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/imgOpcion4_actC"
+                android:layout_width="@dimen/sizeAltoImg"
+                android:layout_height="@dimen/sizeAltoImg"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_oso" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginImg"
+            android:layout_marginRight="@dimen/marginImg"
+            android:layout_marginBottom="@dimen/marginImg"
+            app:cardBackgroundColor="@color/blanco60"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/imgOpcion5_actC"
+                android:layout_width="@dimen/sizeAltoImg"
+                android:layout_height="@dimen/sizeAltoImg"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pelota" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginImg"
+            android:layout_marginRight="@dimen/marginImg"
+            android:layout_marginBottom="@dimen/marginImg"
+            app:cardBackgroundColor="@color/blanco60"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/imgOpcion6_actC"
+                android:layout_width="@dimen/sizeAltoImg"
+                android:layout_height="@dimen/sizeAltoImg"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_oso" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginImg"
+            android:layout_marginRight="@dimen/marginImg"
+            android:layout_marginBottom="@dimen/marginImg"
+            app:cardBackgroundColor="@color/blanco60"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/imgOpcion7_actC"
+                android:layout_width="@dimen/sizeAltoImg"
+                android:layout_height="@dimen/sizeAltoImg"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pelota" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginImg"
+            android:layout_marginRight="@dimen/marginImg"
+            android:layout_marginBottom="@dimen/marginImg"
+            app:cardBackgroundColor="@color/blanco60"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/imgOpcion8_actC"
+                android:layout_width="@dimen/sizeAltoImg"
+                android:layout_height="@dimen/sizeAltoImg"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_oso" />
+        </androidx.cardview.widget.CardView>
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtOpcion1_actC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textColor="@color/blancoG1"
+            android:textSize="@dimen/sizeTextoOpciones"
+            android:onClick="ontouchOpcion"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/bittersweet"
+            android:background="@drawable/card_option"/>
+
+        <TextView
+            android:id="@+id/txtOpcion2_actC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@color/blancoG1"
+            android:textSize="@dimen/sizeTextoOpciones"
+            android:onClick="ontouchOpcion"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/grass"
+            android:background="@drawable/card_option"/>
+
+        <TextView
+            android:id="@+id/txtOpcion3_actC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="@color/texto"
+            android:textSize="@dimen/sizeTextoOpciones"
+            android:onClick="ontouchOpcion"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/sunflower"
+            android:background="@drawable/card_option"/>
+
+        <TextView
+            android:id="@+id/txtOpcion4_actC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/blancoG1"
+            android:textSize="@dimen/sizeTextoOpciones"
+            android:onClick="ontouchOpcion"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/lavander"
+            android:background="@drawable/card_option"/>
+    </LinearLayout>
+</LinearLayout>

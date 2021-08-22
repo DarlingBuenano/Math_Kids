@@ -12,11 +12,19 @@
     <color name="cards">#ffffff</color>
     <color name="botones">#DD8B2E</color>
     <color name="fondo">#fbf5f2</color>
-    <color name="texto">#151515</color>
+    <color name="texto">#202020</color>
     <color name="textoPrimario">#ffffff</color>
     <color name="textoSecundario">#cecece</color>
 
     <color name="blancoG1">#FFFFFF</color>
     <color name="blancoG2">#CDFFFFFF</color>
     <color name="transparente">#00FFFFFF</color>
+
+    <color name="blanco60">#99FFFFFF</color>
+
+    <color name="bittersweet">#fc6e51</color>
+    <color name="grass">#8cc152</color>
+    <color name="mint">#37bc9b</color>
+    <color name="lavander">#967adc</color>
+    <color name="sunflower">#ffce54</color>
 </resources>
