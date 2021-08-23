@@ -43,8 +43,7 @@
                 android:id="@+id/imgOpcion1_actC"
                 android:layout_width="@dimen/sizeAltoImg"
                 android:layout_height="@dimen/sizeAltoImg"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_oso" />
+                android:layout_weight="1"/>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -61,8 +60,7 @@
                 android:id="@+id/imgOpcion2_actC"
                 android:layout_width="@dimen/sizeAltoImg"
                 android:layout_height="@dimen/sizeAltoImg"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_oso" />
+                android:layout_weight="1"/>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -79,8 +77,7 @@
                 android:id="@+id/imgOpcion3_actC"
                 android:layout_width="@dimen/sizeAltoImg"
                 android:layout_height="@dimen/sizeAltoImg"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_pelota" />
+                android:layout_weight="1" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -97,8 +94,7 @@
                 android:id="@+id/imgOpcion4_actC"
                 android:layout_width="@dimen/sizeAltoImg"
                 android:layout_height="@dimen/sizeAltoImg"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_oso" />
+                android:layout_weight="1" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -115,8 +111,7 @@
                 android:id="@+id/imgOpcion5_actC"
                 android:layout_width="@dimen/sizeAltoImg"
                 android:layout_height="@dimen/sizeAltoImg"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_pelota" />
+                android:layout_weight="1" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -133,8 +128,7 @@
                 android:id="@+id/imgOpcion6_actC"
                 android:layout_width="@dimen/sizeAltoImg"
                 android:layout_height="@dimen/sizeAltoImg"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_oso" />
+                android:layout_weight="1" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -151,8 +145,7 @@
                 android:id="@+id/imgOpcion7_actC"
                 android:layout_width="@dimen/sizeAltoImg"
                 android:layout_height="@dimen/sizeAltoImg"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_pelota" />
+                android:layout_weight="1" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -169,8 +162,7 @@
                 android:id="@+id/imgOpcion8_actC"
                 android:layout_width="@dimen/sizeAltoImg"
                 android:layout_height="@dimen/sizeAltoImg"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_oso" />
+                android:layout_weight="1"/>
         </androidx.cardview.widget.CardView>
     </androidx.gridlayout.widget.GridLayout>
 

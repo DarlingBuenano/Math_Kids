@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/TemaKids">
         <activity
+            android:name=".SumarActivity"
+            android:exported="true" />
+        <activity
             android:name=".ContarActivity"
             android:exported="true" />
         <activity

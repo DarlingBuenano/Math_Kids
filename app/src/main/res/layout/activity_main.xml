@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/inicio_1"
+    android:background="@drawable/ly_home"
     android:onClick="ontouchTocarPantalla"
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="731dp"
-        android:layout_height="149dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/blanco_degradado"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="15dp">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="72dp"
-            android:layout_height="79dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             app:srcCompat="@drawable/touch" />
 
         <Button

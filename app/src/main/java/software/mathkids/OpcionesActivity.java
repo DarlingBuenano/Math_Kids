@@ -20,7 +20,8 @@ public class OpcionesActivity extends AppCompatActivity {
     }
 
     public void ontouchSumar(View view){
-
+        Intent puente = new Intent(this.getApplicationContext(), SumarActivity.class);
+        startActivity(puente);
     }
 
     public void ontouchContar(View view){

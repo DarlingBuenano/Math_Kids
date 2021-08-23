@@ -20,7 +20,12 @@ import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Random;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class ContarActivity extends AppCompatActivity {
     ImageView imgOpcion1, imgOpcion2, imgOpcion3, imgOpcion4, imgOpcion5, imgOpcion6, imgOpcion7, imgOpcion8;
@@ -28,7 +33,8 @@ public class ContarActivity extends AppCompatActivity {
     ImageView[] arrayImg;
     TextView txtPregunta, txtOpcion1, txtOpcion2, txtOpcion3, txtOpcion4;
     LinearLayout fondoPantalla;
-    int[] aleatorios;
+    Integer[] valores;
+    List<Integer> listValores;
     int respuestaCorrecta;
 
     @Override
@@ -49,14 +55,22 @@ public class ContarActivity extends AppCompatActivity {
 
         aggImagenLista();
         cantidadImagenes = 8;
-        aleatorios = new int[cantidadImagenes];
-        generarAleatoriosAlArray(8);
+        valores = new Integer[cantidadImagenes];
+        llenarArray(valores);
+        listValores = desordenarArray(valores);
         txtPregunta = findViewById(R.id.txtPregunta_actC);
 
         txtOpcion1 = findViewById(R.id.txtOpcion1_actC);
         txtOpcion2 = findViewById(R.id.txtOpcion2_actC);
         txtOpcion3 = findViewById(R.id.txtOpcion3_actC);
         txtOpcion4 = findViewById(R.id.txtOpcion4_actC);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 
     @Override
@@ -97,7 +111,9 @@ public class ContarActivity extends AppCompatActivity {
                     imgUri = Uri.parse("android.resource://"+ getPackageName() +"/drawable/"+ pregunta.getString("objetoContrario"));
                     System.out.println("Pintando objeto contrario " + pregunta.getString("objetoContrario"));
                 }
-                arrayImg[aleatorios[i]].setImageURI(imgUri);
+                System.out.println("Img ("+ i + "): " + imgUri.getPath());
+                System.out.println(listValores.get(i));
+                arrayImg[listValores.get(i) - 1].setImageURI(imgUri);
             }
 
             //Ubicar las alternativas
@@ -113,28 +129,30 @@ public class ContarActivity extends AppCompatActivity {
 
     public void ontouchOpcion(View view){
         TextView txtseleccionado = (TextView)view;
+
         if(txtseleccionado.getText().equals(String.valueOf(respuestaCorrecta)) ){
+
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Felicitaciones")
-                    .setMessage("Has contestado correctamente")
-                    .setPositiveButton("Volver al inicio", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Intent puente = new Intent(getApplicationContext(), OpcionesActivity.class);
-                            startActivity(puente);
-                        }
-                    })
-                    .create()
-                    .show();
+            builder.setTitle("Felicitaciones");
+            builder.setMessage("Has contestado correctamente");
+            builder.setPositiveButton("Volver al inicio", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent puente = new Intent(getApplicationContext(), OpcionesActivity.class);
+                    puente.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(puente);
+                }
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
         }
         else{
-            System.out.println("Touch: " + txtseleccionado.getText() + ", correcta: " + respuestaCorrecta);
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("¡Ups!")
-                    .setMessage("No has respondido correctamente la pregunta")
-                    .setPositiveButton("Intentarlo de nuevo", null)
-                    .create()
-                    .show();
+            builder.setTitle("¡Ups!");
+            builder.setMessage("No has respondido correctamente la pregunta");
+            builder.setPositiveButton("Intentarlo de nuevo", null);
+            AlertDialog dialog = builder.create();
+            dialog.show();
         }
     }
 
@@ -169,26 +187,15 @@ public class ContarActivity extends AppCompatActivity {
         arrayImg = new ImageView[]{imgOpcion1, imgOpcion2, imgOpcion3, imgOpcion4, imgOpcion5, imgOpcion6, imgOpcion7, imgOpcion8};
     }
 
-    private boolean aleatorioExiste(int num){
-        for(int i = 0; i < aleatorios.length; i++){
-            if(num == aleatorios[i]){
-                return true;
-            }
+    private void llenarArray(Integer[] array){
+        for(int i = 0; i < array.length; i++){
+            array[i] = i + 1;
         }
-        return false;
     }
 
-    private void generarAleatoriosAlArray(int cantidad){
-        Random random = new Random();
-        System.out.print("Aleatorios: [");
-        for (int i = 0; i < cantidad; i++){
-            int aleatorio = random.nextInt(cantidad);
-            while ( aleatorioExiste(aleatorio) ){
-                aleatorio = random.nextInt(cantidad);
-            }
-            aleatorios[i] = aleatorio;
-            System.out.print( aleatorio + ",");
-        }
-        System.out.println("]");
+    private List<Integer> desordenarArray(Integer[] array){
+        List<Integer> array2 = Arrays.asList(array);
+        Collections.shuffle(array2);
+        return array2;
     }
 }

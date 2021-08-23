@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal|center_vertical"
     android:orientation="horizontal"
-    tools:context=".OpcionesActivity">
+    tools:context=".OpcionesActivity"
+    android:background="@drawable/ly_pizarra">
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:onClick="ontouchSumar">
+        android:onClick="ontouchSumar"
+        android:background="@drawable/card_option"
+        android:backgroundTint="@color/blanco60"
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/imgSumar"
             android:layout_width="250dp"
-            android:layout_height="260dp"
+            android:layout_height="250dp"
             app:srcCompat="@drawable/sumar" />
 
         <Button
@@ -30,28 +35,25 @@
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textSize="22sp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:onClick="ontouchSumar"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/imgRayo"
-            android:layout_width="180dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_bolt" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="bottom|center_horizontal"
         android:orientation="vertical"
-        android:onClick="ontouchContar">
+        android:onClick="ontouchContar"
+        android:background="@drawable/card_option"
+        android:backgroundTint="@color/blanco60"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp">
+        <ImageView
+            android:id="@+id/imgContar"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/contar" />
         <Button
             android:id="@+id/btnContar"
             android:layout_width="wrap_content"
@@ -61,12 +63,7 @@
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textSize="22sp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
             android:onClick="ontouchContar"/>
-        <ImageView
-            android:id="@+id/imgContar"
-            android:layout_width="250dp"
-            android:layout_height="240dp"
-            app:srcCompat="@drawable/contar" />
     </LinearLayout>
 </LinearLayout>

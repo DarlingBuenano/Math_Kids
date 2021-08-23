@@ -15,7 +15,7 @@
   },
   {
     "id": "2",
-    "landscape": "ic_landscape_desierto",
+    "landscape": "ly_desierto",
     "pregunta": "¿Cuántas pelotas hay en el desierto?",
     "objeto": "ic_pelota",
     "objetoContrario": "ic_oso",
