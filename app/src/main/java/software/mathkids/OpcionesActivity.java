@@ -14,18 +14,15 @@ public class OpcionesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_opciones);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
     public void ontouchSumar(View view){
         Intent puente = new Intent(this.getApplicationContext(), SumarActivity.class);
+        puente.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(puente);
     }
 
     public void ontouchContar(View view){
         Intent puente = new Intent(this.getApplicationContext(), ContarActivity.class);
+        puente.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(puente);
     }
 }

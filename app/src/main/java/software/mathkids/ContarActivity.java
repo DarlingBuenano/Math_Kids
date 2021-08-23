@@ -64,18 +64,6 @@ public class ContarActivity extends AppCompatActivity {
         txtOpcion2 = findViewById(R.id.txtOpcion2_actC);
         txtOpcion3 = findViewById(R.id.txtOpcion3_actC);
         txtOpcion4 = findViewById(R.id.txtOpcion4_actC);
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        finish();
-        getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
 
         JSONArray preguntas = cargarJsonArray();
 
@@ -125,6 +113,18 @@ public class ContarActivity extends AppCompatActivity {
         } catch (JSONException | ArrayIndexOutOfBoundsException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 
     public void ontouchOpcion(View view){

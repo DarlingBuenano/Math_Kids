@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="software.mathkids">
+    
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -10,9 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/TemaKids">
         <activity
+            android:screenOrientation="landscape"
             android:name=".SumarActivity"
             android:exported="true" />
         <activity
+            android:screenOrientation="landscape"
             android:name=".ContarActivity"
             android:exported="true" />
         <activity

@@ -16,15 +16,14 @@ public class SumarActivity extends AppCompatActivity {
     TextView txtNumero1, txtNumero2, txtOpcion1_actS, txtOpcion2_actS, txtOpcion3_actS, txtOpcion4_actS;
     int respuesta;
     int[] opciones;
-    int[] aleatorios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_sumar);
 
-        txtNumero1 = (TextView) findViewById(R.id.txtNumero1);
-        txtNumero2 = (TextView) findViewById(R.id.txtNumero2);
+        txtNumero1 = findViewById(R.id.txtNumero1);
+        txtNumero2 = findViewById(R.id.txtNumero2);
 
         txtOpcion1_actS = findViewById(R.id.txtOpcion1_actS);
         txtOpcion2_actS = findViewById(R.id.txtOpcion2_actS);
