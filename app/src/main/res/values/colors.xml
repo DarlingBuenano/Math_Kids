@@ -27,4 +27,12 @@
     <color name="mint">#37bc9b</color>
     <color name="lavander">#967adc</color>
     <color name="sunflower">#ffce54</color>
+
+    <color name="color_ly_mountain1">#2f0c2a</color>
+    <color name="color_ly_mountain2">#7b0630</color>
+    <color name="color_ly_mountain3">#ee5e46</color>
+
+    <color name="color_ly_desierto1">#A56126</color>
+    <color name="color_ly_desierto2">#793021</color>
+    <color name="color_ly_desierto3">#794025</color>
 </resources>

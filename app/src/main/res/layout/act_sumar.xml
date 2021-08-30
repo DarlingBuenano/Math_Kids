@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SumarActivity"
     android:orientation="vertical"
-    android:background="@drawable/ly_mountain"
+    android:background="@drawable/mountain_degradado"
     android:padding="10dp">
 
     <TextView
@@ -23,12 +23,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:gravity="center_horizontal|center_vertical">
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
         <TextView
             android:id="@+id/txtNumero1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="9"
             android:textSize="100sp"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
@@ -46,7 +46,6 @@
             android:id="@+id/txtNumero2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="9"
             android:textSize="100sp"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
@@ -54,22 +53,16 @@
             android:backgroundTint="@color/blanco60"/>
     </LinearLayout>
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Opciones:"
-            android:textColor="@color/texto"
-            android:textSize="20dp"
-            android:background="@drawable/card_option"
-            android:backgroundTint="@color/blanco60"
-            android:padding="8dp"/>
-
-    </LinearLayout>
+        android:layout_marginTop="25dp"
+        android:text="Opciones:"
+        android:textColor="@color/texto"
+        android:textSize="20dp"
+        android:background="@drawable/card_option"
+        android:backgroundTint="@color/blanco60"
+        android:padding="8dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -80,7 +73,6 @@
             android:id="@+id/txtOpcion1_actS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5"
             android:textColor="@color/texto"
             android:textSize="50dp"
             android:background="@drawable/card_option"
@@ -89,12 +81,11 @@
             android:paddingRight="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="ontouchOpcion"/>
+            android:onClick="onClicOpcion"/>
         <TextView
             android:id="@+id/txtOpcion2_actS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5"
             android:textColor="@color/texto"
             android:textSize="50dp"
             android:background="@drawable/card_option"
@@ -103,12 +94,11 @@
             android:paddingRight="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="ontouchOpcion"/>
+            android:onClick="onClicOpcion"/>
         <TextView
             android:id="@+id/txtOpcion3_actS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5"
             android:textColor="@color/texto"
             android:textSize="50dp"
             android:background="@drawable/card_option"
@@ -117,12 +107,11 @@
             android:paddingRight="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="ontouchOpcion"/>
+            android:onClick="onClicOpcion"/>
         <TextView
             android:id="@+id/txtOpcion4_actS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5"
             android:textColor="@color/texto"
             android:textSize="50dp"
             android:background="@drawable/card_option"
@@ -131,7 +120,7 @@
             android:paddingRight="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="ontouchOpcion"/>
+            android:onClick="onClicOpcion"/>
     </LinearLayout>
 
 </LinearLayout>

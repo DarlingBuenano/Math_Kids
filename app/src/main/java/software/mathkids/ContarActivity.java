@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,7 @@ public class ContarActivity extends AppCompatActivity {
     Integer[] valores;
     List<Integer> listValores;
     int respuestaCorrecta;
+    MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +81,10 @@ public class ContarActivity extends AppCompatActivity {
                     getResources().getIdentifier(pregunta.getString("landscape"), "drawable", getPackageName())
             ));
 
+            //Obtener la voz
+            mediaPlayer = MediaPlayer.create(getApplicationContext(),
+                    getResources().getIdentifier(pregunta.getString("voz"), "raw", getPackageName()));
+
             //Establecer la pregunta
             txtPregunta.setText(pregunta.getString("pregunta"));
 
@@ -93,14 +99,10 @@ public class ContarActivity extends AppCompatActivity {
             for (int i = 0; i < cantidadImagenes; i++){
                 if(i < opcion){
                     imgUri = Uri.parse("android.resource://"+ getPackageName() +"/drawable/"+ pregunta.getString("objeto"));
-                    System.out.println("Pintando objeto " + pregunta.getString("objeto"));
                 }
                 else{
                     imgUri = Uri.parse("android.resource://"+ getPackageName() +"/drawable/"+ pregunta.getString("objetoContrario"));
-                    System.out.println("Pintando objeto contrario " + pregunta.getString("objetoContrario"));
                 }
-                System.out.println("Img ("+ i + "): " + imgUri.getPath());
-                System.out.println(listValores.get(i));
                 arrayImg[listValores.get(i) - 1].setImageURI(imgUri);
             }
 
@@ -116,15 +118,23 @@ public class ContarActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        mediaPlayer.start();
+    }
+
+    @Override
     public void onBackPressed() {
         super.onBackPressed();
         finish();
         getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        mediaPlayer.stop();
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
+    protected void onUserLeaveHint() {
+        super.onUserLeaveHint();
+        mediaPlayer.stop();
     }
 
     public void ontouchOpcion(View view){

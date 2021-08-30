@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/drawable/blanco_degradado.xml" value="0.2890625" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/drawable/boton.xml" value="0.2890625" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/drawable/desierto_degradado.xml" value="0.2890625" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/drawable/ic_landscape_bosque.xml" value="0.2890625" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/drawable/img_card.xml" value="0.2890625" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/drawable/mountain_degradado.xml" value="0.2890625" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/layout/act_sumar.xml" value="0.33" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/layout/activity_contar.xml" value="0.33" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/layout/activity_opciones.xml" value="0.33" />
+        <entry key="..\:/Trabajos/Allison Litardo/Math_Kids/app/src/main/res/layout/img_card.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Yayling/AndroidStudioProjects/MathKids/app/src/main/res/drawable/blanco_degradado.xml" value="0.2890625" />
         <entry key="..\:/Users/Yayling/AndroidStudioProjects/MathKids/app/src/main/res/drawable/boton.xml" value="0.2890625" />
         <entry key="..\:/Users/Yayling/AndroidStudioProjects/MathKids/app/src/main/res/drawable/card_option.xml" value="0.2890625" />

@@ -3,7 +3,6 @@
     package="software.mathkids">
     
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -14,26 +13,26 @@
         android:theme="@style/TemaKids">
         <activity
             android:screenOrientation="landscape"
-            android:name=".SumarActivity"
-            android:exported="true" />
-        <activity
-            android:screenOrientation="landscape"
-            android:name=".ContarActivity"
-            android:exported="true" />
-        <activity
-            android:name=".OpcionesActivity"
-            android:exported="true"
-            android:screenOrientation="landscape" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:screenOrientation="landscape">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".OpcionesActivity"
+            android:exported="true" />
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".SumarActivity"
+            android:exported="true" />
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".ContarActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
